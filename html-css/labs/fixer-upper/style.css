@@ -16,6 +16,8 @@
 
 body {
   margin: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #header {
@@ -27,6 +29,11 @@ body {
   padding-top: 3%;
   text-align: center;
   width: 100%;
+}
+h4{
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #links {
@@ -42,4 +49,20 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+#image {max-width:170px;}
+
+.container > div {
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
