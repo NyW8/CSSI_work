@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+  <!-- some Javascript -->
+  <script> function myfunction(){ alert("I am an alert box!"); } </script>
+
+  <!-- Links to CSS document -->
+  <link rel="stylesheet" href="test.css">
+
+  <style>
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #foo{
+    border :1px dotted black;
+  }
+  </style>
+
+  <title> Tab Title!</title>
+
+  <head>
+    <h1> Hello World! </h1>
+
+  </head>
+
+  <body>
+    <p> Hi </p>
+    <p> Hi again </p>
+    <p> These are all paragraphs </p>
+    <p> So much space between them!</p>
+
+    <parent>
+
+      <child>
+        This content is inside of the child tag, which is inside of the parent tag. Keep an eye on indentation to see which is the parent and which is the child!
+      </child>
+      <child> This is a second child. </child>
+
+      <br> This is part of the parent. <br>
+    </parent>
+
+
+
+    <div>
+      The DIV tag exists to make a "divider" to keep your page organized, <br> but you'll be surprised at how often you'll end up using it.
+      <span> This is a span. </span>
+      <span> Second span. </span>
+      <span id="foo"> Third span with id </span>
+    </div>
+    <div class = "title">
+      This is a second div with a 'title' class
+    </div>
+    <div>
+
+    </div>
+
+    <button onclick="myfunction()"> This is a button! Click me! </button>
+
+    <!-- unordered list -->
+    <ul>
+      <li>An unordered list</li>
+      <li>Second item in an unordered list</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>
+      <li>An ordered list</li>
+      <li>Second item in an ordered list</li>
+    </ol>
+
+    <hr>
+
+    <!-- Need to specify the address of the image using using `src`. This is a self-closing tag. -->
+    <!--img src="addressToTheImage">
+
+    <!- external image
+    <img src="https://media.gettyimages.com/photos/portrait-of-kitten-against-colored-background-picture-id903869076" alt="kitten with blue background">
+
+    <!- image link for local file
+    <img src="img/kitten-blue-background.jpg" alt="Kitten in a donut">
+    <!- Need to specify the address of where the link is anchored.
+    <a href="https://www.google.com"></a>
+
+    <!- anchor for local file
+    <a href="footer.html"></a> -->
+
+  </body>
+
+</html>
