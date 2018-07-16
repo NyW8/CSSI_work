@@ -15,3 +15,7 @@ div {
 button{
   background:#a5e0cc;
 }
+p{
+  border:1px;
+  font-family: arial, helvetica, sans-serif;
+}
