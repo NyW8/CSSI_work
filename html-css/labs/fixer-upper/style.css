@@ -66,3 +66,24 @@ h4{
   line-height: 75px;
   font-size: 30px;
 }
+
+.test {
+  display: grid;
+  background-color: green;
+  grid-gap: 4px;
+  grid-template-columns: 1fr 3fr auto 4fr;
+  grid-template-rows: 1fr 1fr;
+}
+.test div {
+  border: 1px dotted red;
+  background: #DDD;
+  padding:20px 10px 20px 10px;
+  margin:10px;
+  width: 100px;
+  height:100px;
+}
+
+.test div.embiggen{
+  width:200px;
+  height:150px;
+}
