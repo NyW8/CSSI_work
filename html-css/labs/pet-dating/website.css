@@ -1,0 +1,33 @@
+
+img{
+  border-radius: 50%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 300px;
+  justify:center;
+}
+
+.banner{
+  background:purple;
+}
+
+.friendsinfo{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  background-color: white;
+  border:none;
+  color:green;
+  padding: 20px;
+  text-align:center;
+  display: inline-block;
+  margin:4px 2px;
+  border-radius: 50%;
+}
+
+.sp{
+  text-align: center;
+}
