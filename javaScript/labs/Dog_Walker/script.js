@@ -12,14 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 function printer(name, time, fav=false){
+  let words;
   if (!fav){
-    console.log("I will walk "+name+" today at "+time);
+    words = "I will walk "+name.charAt(0).toUpperCase()+name.substr(1)+" today at "+time;
+
   }else{
-    console.log("I will walk "+name+" one of my favorite dogs, today at "+time);
+    words = "I will walk "+name.charAt(0).toUpperCase()+name.substr(1)+", one of my favorite dogs, today at "+time;
   }
+  document.getElementById("hi").innerHTML = words;
 }
 
-let favDogs = [Spike, Jeremy, Lola, Peaches, Steve];
+let favDogs = ['spike', 'jeremy', 'lola', 'peaches', 'steve'];
 // Task 1
 let dogName1 = "Steve";
 let dogType1 = "beagle";
@@ -52,8 +55,9 @@ if (dogType == "corgi" || dogType == "beagle"){
   printer(dogName, "2:00 pm");
 }
 
-function test(name2, type){
-  //SWITCH NAME2 TO NAME
+function walking(){
+  let name = document.getElementById('dog-name').value.toLowerCase();
+  let type = document.getElementById('dog-type').value.toLowerCase();
   let found = false;
   for (var v in favDogs) {
     if (v == name) {
@@ -67,8 +71,8 @@ function test(name2, type){
     }
   }
   if (!found && (type == "corgi" || type == "beagle")){
-            printer(name, "1:00 pm");
-          } else {
-            printer(name, "2:00 pm");
-          }
+    printer(name, "1:00 pm");
+  } else {
+    printer(name, "2:00 pm");
+  }
 }
