@@ -13,7 +13,7 @@
 // limitations under the License.
 
 function checkNumEven(number){
-  if(number%2=0){
+  if(number%2==0){
     return true;
   }
   else{
@@ -22,14 +22,14 @@ function checkNumEven(number){
 }
 
 function checkStringEqualNum(numberString, numberInt){
-  if(numberString === numberInt){
+  if(numberString == numberInt){
     return true;
   }
   return false;
 }
 
 function getFirstElement(array){
-  return array(1);
+  return array[0];
 }
 
 // Test Functions

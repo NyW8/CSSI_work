@@ -13,11 +13,11 @@
 // limitations under the License.
 
 function addFive(number){
-  return number + "5";
+  return number + 5;
 }
 
 function checkNumis6(myNumber){
-  if(number == 6);
+  if(myNumber == 6)
   {
     return "Number is 6";
   }
@@ -27,8 +27,7 @@ function checkNumis6(myNumber){
 }
 
 function subTen(number){
-  return
-  number - 10;
+  return number - 10;
 }
 
 // Test Functions

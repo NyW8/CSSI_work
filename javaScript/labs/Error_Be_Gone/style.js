@@ -12,17 +12,19 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-function uglyCode(arr, num){
-if(arr.length == 0) return "array length is zero"
-else{
+function prettyCode(arr, num){
+  if (arr.length == 0) {
+    return "array length is zero"
 
-if(arr.length > 5) for(var i = 0; i < arr.length; i++) arr[i]=num
+  } else if (arr.length > 5){
+
+    for ( var i = 0; i < arr.length; i++ ) {
+      arr[i] = num;
+    }
+
+  }
+  return arr;
 }
 
-return arr
-
-}
-
-let array=[0,0,0,0,0,0]
-console.log(
-  uglyCode(array,5))
+let array=[0,0,0,0,0,0];
+console.log(prettyCode(array,5));
