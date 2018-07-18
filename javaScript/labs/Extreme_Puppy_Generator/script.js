@@ -13,3 +13,26 @@
 // limitations under the License.
 
 console.log(dataObject);
+let body = document.getElementsByTagName('body');
+
+function showGifUrl(){
+  dataObject.data.forEach(function(element){
+    const div = document.createElement('div');
+    document.body.appendChild(div);
+    var txt = document.createTextNode(element.title);
+    div.appendChild(txt);
+
+    var img = document.createElement('img');
+    img.src = element.url;
+    div.appendChild(img);
+
+    div.classList.add("gif");
+  });
+}
+
+function deleteGifs(){
+  let gifs = document.getElementsByClassName('gif');
+  for (let i = gifs.length-1; i >=0; i--){
+    gifs[i].parentNode.removeChild(gifs[i]);
+  }
+}

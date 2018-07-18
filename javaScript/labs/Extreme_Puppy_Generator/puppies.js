@@ -11,14 +11,13 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 let dataObject = {
   "data": [
     {
       "type": "gif",
       "id": "gxxlowyvtfS0M",
       "slug": "puppy-dog-run-gxxlowyvtfS0M",
-      "url": "https://giphy.com/gifs/puppy-dog-run-gxxlowyvtfS0M",
+      "url": "https://i.giphy.com/media/gxxlowyvtfS0M/giphy.webp",
       "source": "https://littleanimalgifs.tumblr.com/post/17697600748",
       "rating": "g",
       "images": {
@@ -32,7 +31,7 @@ let dataObject = {
       "type": "gif",
       "id": "FOL5mK0tXUmXe",
       "slug": "puppy-burrito-dog-FOL5mK0tXUmXe",
-      "url": "https://giphy.com/gifs/puppy-burrito-dog-FOL5mK0tXUmXe",
+      "url": "https://i.giphy.com/media/FOL5mK0tXUmXe/giphy.webp",
       "source": "https://littleanimalgifs.tumblr.com/post/39095638812/chichiwho-puppy-burrito",
       "rating": "g",
       "images": {
@@ -46,7 +45,7 @@ let dataObject = {
       "type": "gif",
       "id": "3o6ZtaO9BZHcOjmErm",
       "slug": "dog-puppy-fly-3o6ZtaO9BZHcOjmErm",
-      "url": "https://giphy.com/gifs/dog-puppy-fly-3o6ZtaO9BZHcOjmErm",
+      "url": "https://i.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.webp",
       "source": "",
       "rating": "g",
       "images": {
@@ -60,7 +59,7 @@ let dataObject = {
       "type": "gif",
       "id": "3oz8xXS6gDYSNbqme4",
       "slug": "dog-cute-adorable-3oz8xXS6gDYSNbqme4",
-      "url": "https://giphy.com/gifs/dog-cute-adorable-3oz8xXS6gDYSNbqme4",
+      "url": "https://i.giphy.com/media/3oz8xXS6gDYSNbqme4/giphy.webp",
       "source": "",
       "rating": "g",
       "images": {
@@ -74,7 +73,7 @@ let dataObject = {
       "type": "gif",
       "id": "QFSD9tGuryBHy",
       "slug": "living-marshmallow-behold-QFSD9tGuryBHy",
-      "url": "https://giphy.com/gifs/living-marshmallow-behold-QFSD9tGuryBHy",
+      "url": "https://i.giphy.com/media/QFSD9tGuryBHy/giphy.webp",
       "source": "https://www.reddit.com/r/gifs/comments/3qroxu/behold_a_living_marshmallow/",
       "rating": "g",
       "images": {
@@ -88,7 +87,7 @@ let dataObject = {
       "type": "gif",
       "id": "4T7e4DmcrP9du",
       "slug": "puppy-biscuit-emerging-4T7e4DmcrP9du",
-      "url": "https://giphy.com/gifs/puppy-biscuit-emerging-4T7e4DmcrP9du",
+      "url": "https://i.giphy.com/media/4T7e4DmcrP9du/giphy.webp",
       "source": "https://www.gifbay.com/gif/puppy_emerging_from_a_biscuit_package-120029/",
       "rating": "g",
       "images": {
@@ -102,7 +101,7 @@ let dataObject = {
       "type": "gif",
       "id": "fegzospsGS6Os",
       "slug": "puppy-dog-fluffy-fegzospsGS6Os",
-      "url": "https://giphy.com/gifs/puppy-dog-fluffy-fegzospsGS6Os",
+      "url": "https://i.giphy.com/media/fegzospsGS6Os/giphy.webp",
       "source": "https://littleanimalgifs.tumblr.com/post/15754885097/fluffy-puppy",
       "rating": "g",
       "images": {
@@ -116,7 +115,7 @@ let dataObject = {
       "type": "gif",
       "id": "xtGpIp4ixR6Gk",
       "slug": "animals-being-jerks-xtGpIp4ixR6Gk",
-      "url": "https://giphy.com/gifs/animals-being-jerks-xtGpIp4ixR6Gk",
+      "url": "https://i.giphy.com/media/xtGpIp4ixR6Gk/giphy.webp",
       "source": "https://atchuup.com/animals-were-caught-being-complete-jerks/",
       "rating": "g",
       "images": {
@@ -130,7 +129,7 @@ let dataObject = {
       "type": "gif",
       "id": "l0Exk8EUzSLsrErEQ",
       "slug": "dance-dog-dancing-l0Exk8EUzSLsrErEQ",
-      "url": "https://giphy.com/gifs/dance-dog-dancing-l0Exk8EUzSLsrErEQ",
+      "url": "https://i.giphy.com/media/l0Exk8EUzSLsrErEQ/giphy.webp",
       "source": "",
       "rating": "g",
       "images": {
@@ -144,7 +143,7 @@ let dataObject = {
       "type": "gif",
       "id": "HKl5QYQF5aOdO",
       "slug": "dog-cute-puppy-HKl5QYQF5aOdO",
-      "url": "https://giphy.com/gifs/dog-cute-puppy-HKl5QYQF5aOdO",
+      "url": "https://i.giphy.com/media/HKl5QYQF5aOdO/giphy.webp",
       "source": "https://thefrogman.me/post/9668360509/cooling-off-the-ear-flaps-video",
       "rating": "g",
       "images": {
