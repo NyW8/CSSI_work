@@ -13,3 +13,42 @@
 // limitations under the License.
 
 console.log("Running Click Events Script");
+let boxes = document.getElementsByClassName('box');
+
+
+function changeColor(color){
+  for (i = 0; i < 3; i++){
+  console.log(i+" "+boxes[i].style.background);
+    boxes[i].style.backgroundColor = color;
+  }
+  console.log("done"+color+" "+color.type);
+}
+
+let fourOn = true;
+let fiveOn = false;
+
+function switchIt(num) {
+
+  /*if (num == 4){
+
+    if (fourOn){
+      boxes[4].style.backgroundColor = "blue";
+      fourOn = false;
+    }else{
+      fourOn = true;
+      boxes[4].style.backgroundColor = "yellow";
+    }
+
+  }else{
+
+    if (fiveOn){
+      boxes[5].style.backgroundColor = "blue";
+      fiveOn = false;
+    }else{
+      fiveOn = true;
+      boxes[5].style.backgroundColor = "yellow";
+    }
+
+  }*/
+
+}
