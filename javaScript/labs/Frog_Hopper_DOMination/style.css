@@ -23,6 +23,7 @@
   position:absolute;
   top: 50%;
   width: 70px;
+  transition:500ms all;
 }
 
 .lily_pad {
@@ -36,6 +37,11 @@
 
 .active {
   border: solid yellow thick;
+}
+
+.win-text{
+  display:none;
+  display:
 }
 
 #board {
