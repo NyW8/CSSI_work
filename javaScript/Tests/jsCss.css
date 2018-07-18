@@ -1,3 +1,13 @@
 .likeButton{
   transition:8000ms all;
 }
+
+.floatingBox{
+  position:absolute;
+  width:100px;
+  height:100px;
+  left:100px;
+  top:100px;
+  transition:100ms all;
+  background-color: cyan;
+}
