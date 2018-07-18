@@ -24,7 +24,7 @@ function changeColor(color){
   console.log("done"+color+" "+color.type);
 }
 
-let fourOn = true;
+let fourOn = true; 
 let fiveOn = false;
 
 function switchIt(num) {
