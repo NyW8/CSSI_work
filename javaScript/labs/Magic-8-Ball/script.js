@@ -12,3 +12,27 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+let answer = document.getElementById('answer');
+let positive = ["It is certain", "It is decidedly so", "Without a doubt","Yes – definitely", "You may rely on it", "As I see it", "Most Likely","Outlook good", "Yes", "Signs point to yes"];
+let negative = ["Don’t count on it", "My reply is no","My sources say no", "Outlook not so good", "Very doubtful"];
+let noncommital = ["Reply hazy", "Try again","Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again"];
+
+document.addEventListener('click', ()=>{
+  let cat = Math.floor(Math.random()*6);
+  let color;
+  let arr;
+  if (cat <=2){
+    arr = positive;
+    color = "green";
+  }else if (cat <=4){
+    arr = negative;
+    color = "red";
+  }else {
+    arr = noncommital;
+    color = "yellow";
+  }
+  let num = Math.floor(Math.random()*arr.length);
+  answer.innerText = arr[num];
+  answer.style.color = color;
+  console.log(cat);
+});
