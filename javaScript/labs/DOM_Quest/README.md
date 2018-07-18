@@ -6,9 +6,9 @@ As I'm sure you know from reading any fantasy/science fiction book ever, every h
 #### Challenges
 Each challenge refers to the boxes on the row of the challenge number. For example, challenge 1 deals with the first row of boxes on the HTML page. Make sure you have a live preview up so you can see what's going on! At this point, we're jumping straight into coding in the script.js file. If you need some refreshers on how to grab elements from your HTML, add events to them, or write functions look back at the other labs that you have completed so far!
 
-WHen you open up your live preview, Check out the console. You should see the statement "Running Click Events Script" printed. Inside the scripts folder you'll see a file "clickEvents.js". This is the file that is linked to your HTML. The first two tasks will be completed in this file.
+When you open up your live preview, Check out the console. You should see the statement "Running Click Events Script" printed. Inside the scripts folder you'll see a file "clickEvents.js". This is the file that is linked to your HTML. The first two tasks will be completed in this file.
 
-1. You're first challenge deals with concepts that should be familiar. You'll be using a click event to alter the colors of the boxes in the first row. When you click on one of the boxes, the other two should change to be the same color as the box you clicked on. You can begin with separate functions for each box with the color hardcoded in.
+1. Your first challenge deals with concepts that should be familiar. You'll be using a click event to alter the colors of the boxes in the first row. When you click on one of the boxes, the other two should change to be the same color as the box you clicked on. You can begin with separate functions for each box with the color hardcoded in.
   * As an additional challenge, see if you can write one named function that you can use for all three of the boxes.
 
 2. Your second challenge is to implement a toggle functionality. When something toggles it alternates between different states. When you click on the yellow square, it should turn blue. If you click on it again it should turn back to yellow and so on. When you click on the blue square it should turn yellow, if you click on it again it should turn back to yellow and so on.
