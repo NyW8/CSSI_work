@@ -1,8 +1,8 @@
-This is a working but simple full application. Use this when you get stuck or are just starting to build your own app. 
+This is a working but simple full application. Use this when you get stuck or are just starting to build your own app.
 
 Ideally, you can use this reference less an less often as you start to commit some of these pieces to memory - or better yet, get used to reading the documentation about GAE, Jinja and Datastore online.
 
-## Running the App
+## Running the App 
 
 * Run this app by typing `dev_appserver.py app.yaml` into the terminal.
 * Then direct your browser to `localhost:8000`.
