@@ -13,6 +13,17 @@ def fizz_buzz(num):
             print("Computer: "+str(n)+": buzz")
 
 def fizzGame(num):
+    """Checks input and computer fizz or buzz
+
+    This function returns "fizz", "buzz", "fizz buzz",
+    or original number if it is divisible by 3, 5, both, or neither.
+
+    Args:
+        num: number that will be checked for fizz or buzz
+    Returns:
+        Output for game, (str) "fizz", "buzz", "fizz buzz" OR (int) num
+
+    """
     if (num%3 == 0) and (num%5 == 0):
         return("fizz buzz")
     elif num % 3==0:
