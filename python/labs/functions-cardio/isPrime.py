@@ -1,4 +1,4 @@
-"""isPrime.py
+"""isPrime.py 
 
 Tests if number is prime or not
 """
