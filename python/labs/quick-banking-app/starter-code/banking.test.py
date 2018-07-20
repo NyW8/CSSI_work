@@ -15,9 +15,10 @@
 # limitations under the License.
 
 import sys
-from banking import BankAccount
+from banking import BankAccount, Transaction
 
-acc = BankAccount("test acc", 1000)
+
+"""acc = BankAccount("test acc", 1000)
 print("Created bank account 'test acc' with initial balance 1000")
 
 print("\nTest 0: __init__")
@@ -87,7 +88,6 @@ print("Test 4.1 passed!")
 cont = input("\nDid you do level 2? [y|n]: ").lower()
 if cont == "n":
     sys.exit()
-
 acc2 = BankAccount("new acc", 200)
 print("\nCreated bank account 'new acc' with initial balance 200")
 
@@ -111,8 +111,11 @@ assert acc.balance == 1100, \
     "Expected 'real acc' balance 1100, instead saw %s" % acc.balance
 assert acc2.balance == 500, \
     "Expected 'new acc' balance 500, instead saw %s" % acc.balance
-print("Test 5.1 passed!")
+print("Test 5.1 passed!")"""
 
+
+acc = BankAccount("acc", 1100)
+acc2 = BankAccount("new acc", 500)
 print("\nTest 5.2: transfer")
 print("Transferring 5000 from 'real acc' to 'new acc'")
 acc.transfer(acc2, 5000)
@@ -123,3 +126,14 @@ assert acc.balance == 1100, \
 assert acc2.balance == 500, \
     "Expected 'new acc' balance 500, instead saw %s" % acc.balance
 print("Test 5.2 passed!")
+
+print("\nTest 6: Transfer Class")
+print("Transferring 5000 from 'real acc' to 'new acc'")
+transfer1 = Transaction("withdraw", 1000, acc2)
+print(acc2)
+print(acc)
+assert acc.balance == 1100, \
+    "Expected 'real acc' balance 1101, instead saw %s" % acc.balance
+assert acc2.balance == 500, \
+    "Expected 'new acc' balance 499, instead saw %s" % acc.balance
+print("Test 6 passed!")
