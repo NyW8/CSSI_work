@@ -37,6 +37,21 @@ def get_highest_words(counts_dictionary, count):
 
 
 content = read_process_data()
-
+word_count = {}
+stops = get_stop_words()
+words = content.split(" ")
+for word in words:
+    if word == "" or word in stops:
+        continue
+    if word.endswith(".") or word.endswith(",") or word.endswith('"'):
+        word = word[:-1]
+    if word.startswith('"'):
+        word = word[1:]
+    if word in word_count:
+        word_count[word] +=1
+    else:
+        word_count[word] = 1
+get_highest_words(word_count, 50)
+#for thing in word_count:
+#    print thing+": "+str(word_count[thing])
 # Write your solution below!
-
