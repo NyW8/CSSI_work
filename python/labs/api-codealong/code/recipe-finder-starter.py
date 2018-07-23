@@ -13,7 +13,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+import requests
 ingredients = []
 
 enter_more = input("Do you have any specific ingredients to enter? [y|n]:").lower()
@@ -23,6 +23,17 @@ while enter_more == "y":
     enter_more = input("Do you have any more ingredients to enter? [y|n]:").lower()
 
 recipe = input("What kind of recipe do you want to find?")
+url = "http://www.recipepuppy.com/api/?i="+','.join(ingredients)+"&q="+recipe+"&p=3"
+print(requests.get(url))
+
+r = requests.get(url)
+# print(r.status_code)
+# print(r.json())
+# print (type(r.json()))
+# print(r.json()['results'])
+# print(r.json()['results'][0])
+
+for recipe in r.json()['results']:
+    print recipe['title']
 
 # Write your code below!
-
