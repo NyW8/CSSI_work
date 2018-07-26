@@ -1,0 +1,71 @@
+
+.m-scene{
+  .scene-element{
+    animation-duration:0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+  .se--fadein{
+    animation-name:fadeIn;
+  }
+  .se--fadeinup{
+    animation-name:fadeInUp;
+  }
+  .se--fadeinright{
+    animation-name:fadeInRight;
+  }
+}
+
+body{
+  background-image: url('http://cdn01.wallconvert.com/_media/conv/1/19/187488-turquoise.jpg');
+  text-align: center;
+}
+
+h1{
+  font: 50px impact;
+}
+h2{
+  font: 30px Verdana;
+}
+#text1{
+  height:50px;
+  font-size: 14pt;
+}
+#meme-type{
+  height:50px;
+  font-size: 14pt;
+}
+#button{
+  position:fixed;
+  height:80px;
+  font: 18pt tahoma;
+  left:50%;
+}
+@keyframes fadeIn{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    }
+  }
+@keyframes fadeInUp{
+  0%{
+    opacity:0;
+    transform:translate3d(0,100%,0);
+    }
+  100%{
+    opacity:1;
+    transform:none;
+    }
+  }
+@keyframes fadeInRight{
+  0%{
+    opacity:0;
+    transform:translate3d(100%,0,0);
+  }
+  100%{
+    opacity:1;
+    transform:none;
+    }
+  }

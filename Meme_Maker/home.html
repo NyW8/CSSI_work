@@ -3,10 +3,25 @@
   <head>
     <title>Welcome!</title>
   </head>
-  <body>
+  <link rel="stylesheet" type="text/css" href="home.css" media="screen" />
+  <body class="m-scene se--fadein">
     <h1>Meme Generator</h1>
-    <img height="100px" width="150px" src="https://bloximages.chicago2.vip.townnews.com/tribdem.com/content/tncms/assets/v3/editorial/3/83/38384be2-3ba5-11e8-adec-bf48bc62810f/5acadc92f3c7d.image.jpg?resize=1200%2C1070">
     <h2>Welcome to my meme generator!</h2>
-    <a href="localhost:8080/memes">Click here to go to my meme generator!</a>
+
+    <br><br><br>
+    <form method=POST action="/home" class="se--fadeinup">
+      <br>
+      <input type="text" id="text1" name="text1" placeholder="Line 1 of meme">
+      <input type="text" id="text1" name="text2" placeholder="Line 2 of meme">
+      <select name="meme-type" id="meme-type">
+        <option value="random">Random</option>
+        {% for number, name in meme_names.items() %}
+          <option value={{number}}>{{name}}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <br>
+      <input type="submit" id="button" value="Let's make a meme!">
+    </form>
   </body>
 </html>
