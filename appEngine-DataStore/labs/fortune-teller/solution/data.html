@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form method=POST>
+    First Name: <input type="text" name="First"><br>
+    Last Name: <input type="text" name="Last"><br>
+    Username: <input type="text" name="User"><br>
+    Password: <input type="password" name="Pass"><br>
+    Email: <input type="text" name="Email"><br>
+    Bitmoji: <input type="checkbox" name="Bitmoji"><br>
+    Location: <input type="text" name="Location"><br>
+    Phone: <input type="tel" name="Phone"><br>
+    Pickle: <input type="checkbox" name="Pickle"><br>
+    <input type="submit" value="Save User">
+  </form>
+  <br>
+  <form method=POST action="/confirm_delete">
+
+  <input type="submit" value="DELETE ACCOUNT"> <br><br>
+  
+  {% for key, value in deletable.items() %}
+    <input type="checkbox" onclick = "myFunction()" id={{key}} name={{key}}>{{key}} : {{value}} <br>
+    <input type="submit" value="Delete this User">
+
+    <input type="hidden" name="key" value={{key}}>
+  {% endfor %}
+
+
+  <input type="checkbox" onclick = "myFunction()" id="pass" name={{key}}>
+  <input type="submit" value = "Delete above data"><br><br>
+
+  {% for key, value in changeable.items() %}
+    <input type="checkbox" onclick="myFunction()" name={{key}}>{{key}} : {{value}}<br>
+  {% endfor %}
+  <input type="text" name="hi" style="display:none" placeholder="Enter changed information here"> <br>
+  <p id="text" style="display:none">Checkbox is CHECKED!</p>
+  <input type="submit" value="Change above data">
+</form>
+</body>
+
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("pass");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+</html>

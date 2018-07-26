@@ -30,4 +30,6 @@ handlers:
 libraries:
 - name: webapp2
   version: "2.5.2"
+- name: jinja2
+  version: latest
 #add jinja2 here, remember in .yaml files, every white space is important
